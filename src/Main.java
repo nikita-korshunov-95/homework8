@@ -66,7 +66,7 @@ public class Main {
             }
             System.out.print(floors[index] + ", ");
         }
-        System.out.println("Задача № 4");
+        System.out.println("Задача №4");
         for (int a=0; a<weight.length; a++) {
             if (weight[a] % 2 != 0) {
                 weight[a] += 1;
