@@ -18,45 +18,54 @@ public class Main {
         }
         System.out.println(" ");
         int[] floors = {1, 2, 3, 4, 5, 6, 7};
-        for (int l = 0; l < 3; l++) {
+        for (int l = 0; l < 7; l++) {
             System.out.println(floors[l]);
         }
 
         System.out.println("Задача №2");
         for (int index = 0; index < weight.length; index++) {
             if (index == weight.length - 1) {
-                System.out.println(weight[index]);
+                System.out.println(weight[index] + " ");
                 break;
             }
-            System.out.print(weight[index] + " ");
+            System.out.print(weight[index] + ", ");
         }
         for (int index = 0; index < weight1.length; index++) {
             if (index == weight1.length - 1) {
-                System.out.println(weight1[index]);
+                System.out.println(weight1[index] + " ");
                 break;
             }
-            System.out.print(weight1[index] + " ");
+            System.out.print(weight1[index] + ", ");
         }
         for (int index = 0; index < floors.length; index++) {
             if (index == floors.length - 1) {
                 System.out.println(floors[index]);
                 break;
             }
-            System.out.print(floors[index] + " ");
+            System.out.print(floors[index] + ", ");
         }
         System.out.println("Задача №3");
         for (int index = weight.length - 1; index >= 0; index--) {
-            System.out.print(weight[index] + " ");
+            if (index == 0) {
+                System.out.println(weight[index] + " ");
+                break;
+            }
+            System.out.print(weight[index] + ", ");
         }
-        System.out.println(" ");
         for (int index = weight1.length - 1; index >= 0; index--) {
-            System.out.print(weight1[index] + " ");
+            if (index == 0) {
+                System.out.println(weight[index] + " ");
+                break;
+            }
+            System.out.print(weight1[index] + ", ");
         }
-        System.out.println(" ");
         for (int index = floors.length - 1; index >= 0; index--) {
-            System.out.print(floors[index] + " ");
+            if (index == 0) {
+                System.out.println(floors[index] + " ");
+                break;
+            }
+            System.out.print(floors[index] + ", ");
         }
-        System.out.println(" ");
         System.out.println("Задача №4");
         for (int a=0; a<weight.length; a++) {
             if (weight[a] % 2 != 0) {
@@ -66,3 +75,4 @@ public class Main {
             System.out.println(Arrays.toString(weight));
         }
     }
+
